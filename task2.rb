@@ -14,7 +14,12 @@ end
 class Main
   def main
     files = Dir.entries('.')
-    puts files.select { |file| file.start_with?('.') }.sort.middle.plural('s').upcase
+    puts files
+           .select { |file| file.start_with?('.') }
+           .sort
+           .middle
+           .plural('s')
+           .upcase
   end
 end
 
